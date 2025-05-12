@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Portal - Select Role</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .role-selection-card {
+            max-width: 450px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #e9ecef;
+            padding: 1rem 0;
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="card shadow-sm role-selection-card">
+            <div class="card-body p-4 p-md-5 text-center">
+
+                <h1 class="h3 mb-3 fw-normal">My Application Portal</h1>
+
+                <h2 class="h4 mb-3">Select Your Role</h2>
+                <p class="text-muted mb-4">Choose your access level to proceed.</p>
+
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                    <a href="./admin/login.php" type="button" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="top" title="Access administrative functions and system settings.">
+                        <i class="bi bi-person-fill-gear me-2"></i>Admin
+                    </a>
+
+                    <a href="" type="button" class="btn btn-secondary btn-lg" data-bs-toggle="tooltip" data-bs-placement="top" title="Access standard employee tools and personal dashboard.">
+                        <i class="bi bi-person-fill me-2"></i>Employee
+                    </a>
+                </div>
+
+                <hr class="my-4">
+                <p class="text-muted small">Need help? <a href="#">Contact Support</a></p>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto text-center">
+        <div class="container">
+            <p>&copy; 2025 Your Company Name. All Rights Reserved. | Tarmigt, Drâa-Tafilalet, Morocco</p>
+            <p class="small">Page generated around: Wednesday, April 9, 2025 at 6:36 PM +01</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+</body>
+</html>
